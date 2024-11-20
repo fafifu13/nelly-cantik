@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasil Sidang IPB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Backsound musik -->
+  <audio id="backgroundMusic" loop>
+    <source src="Shigatsu wa Kimi no Uso (光るなら)  Hikaru Nara - Goose House  (Color Coded Lyrics Kan_Rom_Indo).mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung pemutaran audio.
+  </audio>
+
+  <!-- Kontainer utama -->
+  <div class="container">
+    <h1 id="congratsText" class="fade-in">Selamat, Nelly Purnama Sari!</h1>
+    <p id="messageText" class="fade-in" style="display: none;">Kamu telah lulus ujian sidang dengan gemilang! 🎓</p>
+    
+    <!-- Gambar Nelly yang akan muncul setelah klik Rayakan -->
+    <img id="nellyPhoto" src="WhatsApp_Image_2024-11-18_at_16.15.06-removebg-preview (1).png" alt="Foto Nelly Purnama Sari" style="display: none; width: 200px; border-radius: 10px;">
+    
+    <div class="buttons">
+      <button id="celebrateButton" onclick="celebrate()" class="btn confetti-btn">Rayakan!</button>
+
+    </div>
+    
+    <!-- Canvas untuk konfeti -->
+    <canvas id="confettiCanvas"></canvas>
+    
+    <!-- Output teks puisi yang akan muncul setelah klik gambar -->
+    <p id="messageOutput" class="poem" style="display: none;"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
